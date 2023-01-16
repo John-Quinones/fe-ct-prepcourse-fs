@@ -2,7 +2,7 @@
 /*2️⃣ EJERCICIO 02 2️⃣*/
 
 class Persona {
-   constructor(nombre, apellido, edad, dir) {
+   constructor(nombre, apellido, edad, domicilio) {
    // Crea el constructor de la clase "Persona".
    // Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio".
    // Debe tener un método llamado "detalle" que nos devuelva un objeto con las propiedades de la persona y
@@ -10,24 +10,24 @@ class Persona {
    this.nombre = nombre,
    this.apellido = apellido,
    this.edad = edad,
-   this.domicilio = dir
+   this.domicilio = domicilio
    this.detalle = function() {
       return {
-         Nombre: this.nombre,
-         Apellido: this.apellido,
-         Edad: this.edad,
-         Domicilio: this.dir
+         nombre: this.nombre,
+         apellido: this.apellido,
+         edad: this.edad,
+         domicilio: this.domicilio
       }
     }
   }
 }
    
-function crearInstanciaPersona(nombre, apellido, edad, dir) {
+function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
    // En este ejercicio debes crear una instancia de la clase construida en el ejercicio anterior.
    // Recibirás las propiedades por parámetro.
    // Retornar la instancia creada.
    // Tu código:
-   var persona = new Persona(nombre,apellido,edad,dir);
+   var persona = new Persona(nombre,apellido,edad,domicilio);
    return persona;
 
 }
